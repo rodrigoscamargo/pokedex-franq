@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "449223757277",
+    "project_id": "pokedex-franq",
+    "storage_bucket": "pokedex-franq.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449223757277:android:ea97d9f60dbb3d1b4f7a34",
+        "android_client_info": {
+          "package_name": "com.franq.pokedex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449223757277-0o8sl6o4pm8qqlpsf4i1pems2p1pv8hv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcSTeCSqcfAPN8eGdyXqZnPIAvHeEwDI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449223757277-0o8sl6o4pm8qqlpsf4i1pems2p1pv8hv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

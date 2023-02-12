@@ -1,0 +1,39 @@
+slidy: '1'
+variables:
+  customMessage: "Complete"
+
+scripts:
+  doctor: flutter doctor
+
+  format:
+    name: "Dart format"
+    description: 'Formatting code'
+    run: dart format -l 120 .
+
+  clean:
+    name: "Clean"
+    description: 'minha descricao'
+    run: flutter clean
+
+  cleanup:
+    description: "cleanup project"
+    steps:
+      - name: "Clean"
+        run: flutter clean
+        
+      - name: "GetPackages"
+        description: "Get packages"
+        run: flutter pub get
+
+      - name: "PodClean"
+        description: "Execute pod clean"
+        shell: bash
+        condition: "${System.operatingSystem} == macos"
+        working-directory: ios
+        run: |-
+          rm Podfile.lock
+          pod deintegrate
+          pod update
+          pod install
+
+      - run: echo ${Local.var.customMessage}
