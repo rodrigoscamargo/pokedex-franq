@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
 
+  asuka: ^2.0.1+3
   cupertino_icons: ^1.0.2
   flutter_modular: ^6.0.0-alpha.2
   rxdart: ^0.27.7
@@ -19,6 +20,8 @@ dependencies:
   firebase_analytics: ^10.1.1
   firebase_crashlytics: ^3.0.12
   firebase_auth: ^4.2.6
+  responsive_framework: ^0.2.0
+  dio: ^4.0.6
 
 dev_dependencies:
   flutter_test:
