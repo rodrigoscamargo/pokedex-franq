@@ -206,41 +206,6 @@ class PokemonDetailPageState extends State<PokemonDetailPage> {
     );
   }
 
-  Widget _buildDescription(PokemonEntity pokemon) {
-    final description = pokemon.species.name;
-    return Visibility(
-      visible: description.isNotEmpty == true,
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Description',
-              style: TextStyle(
-                color: Theme.of(context).colorScheme.onSurface,
-                fontSize: 22,
-                fontWeight: FontWeight.w800,
-                height: 1.4,
-              ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Text(
-              description.formatPokemonDescription(),
-              style: TextStyle(
-                color: Theme.of(context).colorScheme.onSurface,
-                fontWeight: FontWeight.w100,
-                fontSize: 16,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
   Widget _buildMedia(PokemonEntity pokemon) {
     final sprites = [
       pokemon.sprites.other.officialArtwork.frontDefault,
