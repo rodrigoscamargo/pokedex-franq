@@ -9,7 +9,6 @@
 
 <div align="center">
 
-[![Coverage Status](https://img.shields.io/coveralls/github/unform/unform?color=8257E5&style=for-the-badge)](https://coveralls.io/github/unform/unform?branch=main)
 
 </div>
 
@@ -26,7 +25,9 @@ Tabela de conteúdos
     - [Organização de pastas dentro de um módulo || custom\_widget](#organização-de-pastas-dentro-de-um-módulo--custom_widget)
     - [Tests](#tests)
     - [Objetivo dos testes?](#objetivo-dos-testes)
-    - [O que testar?](#o-que-testar)
+    - [Teste técnico](#teste-técnico)
+    - [Dificuldades](#dificuldades)
+    - [Tasks](#tasks)
 <!--te-->
 
 ### Pré-requisitos
@@ -202,9 +203,21 @@ void main() {
 O objetivo do teste unitário não é encontrar erros. É uma especificação para os comportamentos esperados do código em teste. O código em teste é a implementação para os comportamentos esperados. Portanto, o teste unitário e o código em teste são usados ​​para verificar a exatidão uns dos outros e se protegerem. Mais tarde, quando alguém alterou o código em teste e mudou o comportamento esperado pelo autor original, o teste falhará. Se o código estiver coberto por um teste unitário razoável, você pode manter o código sem quebrar a funcionalidade existente. É por isso que Michael Feathers define código legado como código sem teste unitário.
 
 
-### O que testar?
+### Teste técnico
+### Dificuldades
+ Tive um pouco de dificulade para entender a API.
 
-```bash
+ ### Tasks
+
+- [X] Configuração do Analytics
+- [X] Configuração do Crash Analytics
+- [x] Scroll infinito (Paginação)
+- [x] Tela de detalhes do Pokemon
+- [x] Unit test do modulo pokedex
+- [ ] Integration test
+- [ ] CI/CD com codemagic
+- [ ] Custom pokemon
+- [ ] Tela de cadastro
 
 
 ```
