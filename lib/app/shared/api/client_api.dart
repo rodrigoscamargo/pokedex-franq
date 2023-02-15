@@ -34,6 +34,8 @@ abstract class Client {
 }
 
 class ClientPokedex extends Client {
+  final base = BaseOptions(baseUrl: 'https://pokeapi.co/api/v2');
+
   final _client = Dio();
 
   @override

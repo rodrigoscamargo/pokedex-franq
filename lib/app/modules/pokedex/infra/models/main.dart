@@ -1,0 +1,11 @@
+export 'pokedex_model.dart';
+export 'home_model.dart';
+export 'pokemon_model.dart';
+export 'other_model.dart';
+export 'ability_model.dart';
+export 'type_model.dart';
+export 'species_model.dart';
+export 'versions_model.dart';
+export 'sprites_model.dart';
+export 'dream_world_model.dart';
+export 'official_artwork_model.dart';

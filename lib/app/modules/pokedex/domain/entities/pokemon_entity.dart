@@ -1,5 +1,5 @@
-abstract class PokemonEntity {
+abstract class PokedexEntity {
   final String name;
   final String url;
-  const PokemonEntity({required this.name, required this.url});
+  const PokedexEntity({required this.name, required this.url});
 }

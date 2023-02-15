@@ -3,7 +3,7 @@ import 'package:pokedex/app/modules/pokedex/domain/repositories/pokemon_reposito
 import 'package:result_dart/result_dart.dart';
 
 abstract class GetPokemonsUsecase {
-  Future<Result<List<PokemonEntity>, Exception>> call({required int limit, required int page});
+  Future<Result<List<PokedexEntity>, Exception>> call({required int limit, required int page});
 }
 
 class GetPokemonsUsecaseImpl implements GetPokemonsUsecase {
@@ -12,7 +12,7 @@ class GetPokemonsUsecaseImpl implements GetPokemonsUsecase {
   GetPokemonsUsecaseImpl(this.repository);
 
   @override
-  Future<Result<List<PokemonEntity>, Exception>> call({required int limit, required int page}) async {
+  Future<Result<List<PokedexEntity>, Exception>> call({required int limit, required int page}) async {
     var result = await repository.getPokemons(limit: limit, page: page);
 
     return result.fold((success) => Success(success), (failure) => Failure(failure));

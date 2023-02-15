@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
+import 'shared/utils/extensions/constants/theme/main.dart';
+
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});
 
@@ -12,7 +14,7 @@ class AppWidget extends StatelessWidget {
     return MaterialApp.router(
       title: 'Podedex Franq',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.fallback(useMaterial3: true),
+      theme: PokedexTheme.theme,
       routeInformationParser: Modular.routeInformationParser,
       routerDelegate: Modular.routerDelegate,
       builder: (context, widget) {
